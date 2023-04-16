@@ -492,6 +492,264 @@
   }
   
   /*###################################################### Start footer ######################################################*/
+   .footer {
+    background-color: #111111;
+    padding: 50px 0 0 0;
+    color: var(--color3);
+  }
+  
+  footer .grid-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .colum-1,
+  .colum-2,
+  .colum-3,
+  .colum-4 {
+    padding: 10px;
+  }
+  
+  footer .colum-1 img {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-contact li {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px
+  }
+  
+  footer .colum-1 {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  
+  footer .colum-1 ul {
+    padding: 0;
+  }
+  
+  .footer .colum-1 ul li a {
+    text-decoration: none;
+    color: var(--color3);
+  }
+  
+  .footer-contact li i {
+    width: 35px;
+    line-height: 35px;
+    margin-right: 15px;
+    border-radius: 50px;
+    background: var(--color1);
+    text-align: center;
+    color: var(--color3)
+  }
+  
+  /*###################################################### Link 1 + Link 2 */
+  footer .colum-2 h4,
+  footer .colum-3 h4,
+  footer .colum-4 h4 {
+    color: var(--color3);
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 21px;
+    font-weight: 600;
+    z-index: 1;
+  }
+  
+  footer .colum-2 h4::before,
+  footer .colum-3 h4::before,
+  footer .colum-4 h4::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 2px;
+    background: rgba(255, 255, 255, .2);
+    bottom: 0;
+  }
+  
+  footer .colum-2 h4::after,
+  footer .colum-3 h4::after,
+  footer .colum-4 h4::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: var(--color1);
+    bottom: 0;
+    left: 1rem;
+  }
+  
+  footer .footer-link {
+    padding: 0
+  }
+  
+  footer .footer-link {
+    padding: 0
+  }
+  
+  footer .footer-link li {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 16px;
+    transition: var(--transition);
+  }
+  
+  footer .footer-link li:hover {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 10px;
+    transition: var(--transition);
+  }
+  
+  footer .footer .colum-2 ul li a,
+  footer .footer .colum-3 ul li a {
+    text-decoration: none;
+    color: var(--color3);
+    font-weight: 600;
+    transition: var(--transition);
+  }
+  
+  footer .footer .colum-2 ul li a:hover,
+  footer .footer .colum-3 ul li a:hover {
+    color: var(--color1);
+    transition: var(--transition);
+  }
+  
+  footer .footer-link li i {
+    width: 20px;
+    line-height: 35px;
+    text-align: center;
+    color: var(--color1)
+  }
+  
+  footer .colum-4 input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 16px;
+    outline: none;
+  }
+  
+  footer .colum-4 button {
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 50px;
+    outline: none;
+    font-weight: bold;
+    border: none;
+    background-color: var(--color1);
+    color: var(--color2);
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  
+  footer .colum-4 button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: var(--color3);
+    transform-origin: center;
+    transition: transform 0.7s ease-in-out;
+  }
+  
+  footer .colum-4 button:hover {
+    cursor: pointer;
+    color: var(--color1);
+    transition: var(--transition);
+  }
+  
+  footer .colum-4 button:hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+  }
+  
+  .Copyright {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   }
+  
+  .Copyright .cop {
+    margin: auto;
+  }
+  
+  .Copyright .cop span {
+    color: var(--color1);
+    font-weight: bold;
+  }
+  
+  .Copyright .social {
+    background-color: var(--color1);
+    width: 48%;
+    height: 100px;
+    position: relative;
+  }
+  
+  .Copyright .social::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 75px;
+    background-color: var(--color1);
+    transform: skewX(-30deg);
+    left: -29px;
+  }
+  
+  .Copyright .social ul {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+  }
+  
+  .Copyright .social li {
+    list-style-type: none;
+    display: inline;
+    padding: 5px;
+  }
+  
+  .Copyright li a {
+    text-decoration: none;
+  }
+  
+  .Copyright li a i {
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50px;
+    background: var(--color2);
+    color: var(--color1);
+    transition: var(--transition);
+  }
+  
+  .Copyright li a i:hover {
+    background-color: var(--color3);
+  }
+  
+  /*###################################################### Start footer ######################################################*/
   @media (max-width: 320px) {
     footer {
       width: fit-content;
