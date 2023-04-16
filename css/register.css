@@ -141,11 +141,10 @@ input[type=text], input[type=password] {
 
 
    /*###################################################### Start footer ######################################################*/
-   .footer {
+    .footer {
     background-color: #111111;
     padding: 50px 0 0 0;
     color: var(--color3);
-    margin-top: 20px;
   }
   
   footer .grid-footer {
@@ -173,10 +172,12 @@ input[type=text], input[type=password] {
     font-size: 16px;
     margin-bottom: 10px
   }
-  footer .colum-1  {
+  
+  footer .colum-1 {
     padding-bottom: 20px;
     margin-bottom: 30px;
   }
+  
   footer .colum-1 ul {
     padding: 0;
   }
@@ -208,6 +209,7 @@ input[type=text], input[type=password] {
     font-weight: 600;
     z-index: 1;
   }
+  
   footer .colum-2 h4::before,
   footer .colum-3 h4::before,
   footer .colum-4 h4::before {
@@ -331,25 +333,30 @@ input[type=text], input[type=password] {
     transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
   }
   
-  .Copyright{
+  .Copyright {
     margin-top: 80px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-  }
-  .Copyright .cop{
+   }
+  
+  .Copyright .cop {
     margin: auto;
   }
-  .Copyright .cop span{
+  
+  .Copyright .cop span {
     color: var(--color1);
     font-weight: bold;
   }
+  
   .Copyright .social {
     background-color: var(--color1);
     width: 48%;
     height: 100px;
     position: relative;
   }
-  .Copyright .social::before{
+  
+  .Copyright .social::before {
     position: absolute;
     content: "";
     height: 100%;
@@ -358,23 +365,25 @@ input[type=text], input[type=password] {
     transform: skewX(-30deg);
     left: -29px;
   }
+  
   .Copyright .social ul {
-    padding: 0;
-    width: 300px;
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate3d(-50%, -50%, 0);
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
   }
+  
   .Copyright .social li {
     list-style-type: none;
     display: inline;
     padding: 5px;
   }
-  .Copyright li a{
+  
+  .Copyright li a {
     text-decoration: none;
   }
-  .Copyright li a i{
+  
+  .Copyright li a i {
     height: 45px;
     width: 45px;
     line-height: 45px;
@@ -384,7 +393,8 @@ input[type=text], input[type=password] {
     color: var(--color1);
     transition: var(--transition);
   }
-  .Copyright li a i:hover{
+  
+  .Copyright li a i:hover {
     background-color: var(--color3);
   }
   
@@ -392,28 +402,133 @@ input[type=text], input[type=password] {
   @media (max-width: 320px) {
     footer {
       width: fit-content;
+      overflow: hidden;
+    }
+    .about .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+    .about .container img {
+      width: 200px;
+      height: 150px;
+    }
+  
+    .about .container .text h5 {
+      font-size: 12px;
+    }
+    .about .container .text h1 {
+      font-size: 20px;
+    }
+  
+    .about .container .text p {
+      font-size: 7px;
+    }
+  
+    button {
+      padding: 3px;
+      font-size: 10px;
     }
   }
   
   /* extra Small */
   @media (max-width: 425px) {
     .container {
-      width: 320px;
+      width: 320px;    overflow: hidden;
+  
+      
+    }
+    .book-taxi .container {
+      height: 55rem;
+      
+    }  
+  
+    
+    .about .container img {
+      width: 20rem;}
+    .about .container {
+      display: flex;
+     
+      
+      
+    }
+   .about .container  {
+    display: flex;
+    flex-direction: column;
+   }
+    
+    /* .about .container div {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    } */
+  
+    .form {
+      display: flex;
+      flex-wrap: wrap;
     }
   }
+  @media (max-width: 600px) {
+    .Copyright .social {
+      width: 100%;
+    }
+    
+  }
+  @media (max-width: 767px) {
+    .about .container{
   
+      display: flex;
+      flex-direction: column;
+  
+    }
+    .book-taxi .container {
+      position: relative;
+      bottom: 100px;
+      /* height: 40vh; */
+      border-radius: 16px;
+      background-color: var(--color3);
+      /* box-shadow: 0 0 2px var(--color1); */
+      padding: 30px;
+  }
+  
+  }
   /* Small */
   @media (min-width: 768px) {
     .container {
       width: 750px;
+      overflow: hidden;
+  
     }
+  
+  
+    
+  .book-taxi .container {
+    position: relative;
+    bottom: 100px;
+    border-radius: 16px;
+    background-color: var(--color3);
+    /* box-shadow: 0 0 2px var(--color1); */
+    padding: 30px;
   }
   
+  .about .container { 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  }
   /* Medium */
   @media (min-width: 992px) {
     .container {
       width: 970px;
     }
+    .about .container {
+      display: flex;
+    flex-direction: row;
+  
+      }
   }
   
   /* Large */
@@ -421,4 +536,11 @@ input[type=text], input[type=password] {
     .container {
       width: 1170px;
     }
+  
+    
   }
+  
+  
+  
+  
+  /* ##################################################3 */
